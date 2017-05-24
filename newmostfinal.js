@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "##";
 const ytdl = require("ytdl-core");
-const token = 'MzE1NjA1NTE2MDk1MDYyMDI2.DAJmcQ.ovU_VRyzlsgqhiqe0yoOzoFI6_4';
+const token = '------';
 var request = require('request');
 var Weather = require('weather.js');
 
@@ -42,7 +42,7 @@ client.on("message", function(message) {
  var args = message.content.substring(prefix.length).split(" ");
 
  function setApiKey() {
-   Weather.APIKEY = 'b0cd8cd00ee72d06e042b48bec70425c'
+   Weather.APIKEY = '--------'
  };
 
  function newCat() {
@@ -125,7 +125,7 @@ switch (args[0]) {
   case "define-callosity":
     message.channel.send('The definition of Callosity is a lack of feeling and/or capacity for emotion')
   break;
-
+//*NOT WORKING vvvvv
  case "weather":
 
 setApiKey();
@@ -143,6 +143,8 @@ message.channel.send(
 );
 });
 break;
+    
+//* NOT WORKING ^^^^^
 
 case "foxy":
 
@@ -152,16 +154,6 @@ break;
 case "TheLegend27":
 
 message.channel.send("https://clips.twitch.tv/GiantYummyDeerTwitchRaid")
-break;
-
-case "Tommy":
-
-message.channel.send(`░██████╗░██████╗░░░░░██╗███████╗░░░░░█████╗░░░░░███████╗░█████╗░░██████╗░░██████╗░░██████╗░████████╗
-██╔═══██╗██╔══██╗░░░░██║██╔════╝░░░░██╔══██╗░░░░██╔════╝██╔══██╗██╔════╝░██╔════╝░██╔═══██╗╚══██╔══╝
-██║░░░██║██████╔╝░░░░██║███████╗░░░░███████║░░░░█████╗░░███████║██║░░███╗██║░░███╗██║░░░██║░░░██║░░░
-██║░░░██║██╔═══╝░░░░░██║╚════██║░░░░██╔══██║░░░░██╔══╝░░██╔══██║██║░░░██║██║░░░██║██║░░░██║░░░██║░░░
-╚██████╔╝██║░░░░░░░░░██║███████║░░░░██║░░██║░░░░██║░░░░░██║░░██║╚██████╔╝╚██████╔╝╚██████╔╝░░░██║░░░
-░╚═════╝░╚═╝░░░░░░░░░╚═╝╚══════╝░░░░╚═╝░░╚═╝░░░░╚═╝░░░░░╚═╝░░╚═╝░╚═════╝░░╚═════╝░░╚═════╝░░░░╚═╝░`)
 break;
 
 
