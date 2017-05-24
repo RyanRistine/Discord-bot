@@ -8,9 +8,8 @@ When running the weather command, this error appears in command line
 >C:\Users\ryanr\project\node_modules\weather.js\dist\weather.js:181
  > return this.data.list[0].main.temp;
  
-                  ^
-
->TypeError: Cannot read property 'list' of undefined
+                            ^
+    >TypeError: Cannot read property 'list' of undefined
     >at Weather.Current.temperature (C:\Users\ryanr\project\node_modules\weather.js\dist\weather.js:181:19)
     >at C:\Users\ryanr\project\gay:142:25
     >at C:\Users\ryanr\project\node_modules\weather.js\dist\weather.js:60:5
